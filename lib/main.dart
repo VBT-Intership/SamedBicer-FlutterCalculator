@@ -16,8 +16,37 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 Expanded(
-                  child: Container(
-                    color: Colors.grey[900],
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            '12 x 14 + 22',
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 20.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(
+                            '12,545',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 50.0,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 Expanded(
